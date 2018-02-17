@@ -8,6 +8,7 @@
 # zip/tar/gz/bz2 to compress_files etc.						   #
 ################################################################
 
+# Import Required Libraries
 from os import listdir, mkdir, rename
 from os.path import isfile, join, exists
 # Folder to Organize
