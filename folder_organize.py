@@ -24,13 +24,15 @@ extn_to_folder_mapper = {
 	'txt xls xlsx pdf doc docx ppt pptx csv':'ppt_pdf_doc_txt',
 	'zip tar gz bz2':'compres_file',
 	'py pyc R whl sh':'code_files',
-	'mp3 mp4 wav':'music_audio'
+	'mp3 mp4 wav':'music_audio',
+	'jar':'Jar',
+	'json':'Json_Files'
 }
 
 # Extracting file extention from the file
-	def get_file_extn(file_name):
-		split_name = file_name.split('.')
-		return split_name[-1]
+def get_file_extn(file_name):
+	split_name = file_name.split('.')
+	return split_name[-1]
 
 # Creating folders/directories as per the folder mapper dictionary
 def create_folder_name(name):
